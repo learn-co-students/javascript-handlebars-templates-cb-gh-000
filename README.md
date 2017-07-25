@@ -1,5 +1,4 @@
-JavaScript Handlebars Templates
----
+# JavaScript Handlebars Templates
 
 ## Objectives
 
@@ -54,8 +53,8 @@ that we can easily select it and get its `innerHTML` when we render it.
 
 Inside the `script` tag, we have some pretty basic HTML for the most
 part, and then some variables  marked by double curly brace delimiters,
-like `{{status}}`. What we're saying there is that, when we render this
-template, we're going to have a variable called `status` that we want to
+like `{{state}}`. What we're saying there is that, when we render this
+template, we're going to have a variable called `state` that we want to
 go in that spot.
 
 **//Flat-fact:** Handlebars uses the curly brace as a delimiter because if you turn it
