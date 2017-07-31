@@ -5,9 +5,24 @@
   </head>
   <body>
     <main id="main">
+      <a href="#" onclick="loadIssue();">Load Github Issue</a>
     </main>
     <script src="handlebars.js"></script>
     <script src="issues.js"></script>
     <script src="index.js"></script>
+    <script id="issue-template" type="text/x-handlebars-template">
+      {{#each this}}
+      <article>
+        <header><h3>Issue #{{number}} ({{state}})</h3></header>
+        <p>{{comment_body}}</p>
+        {{#if comments_count}}
+        <p>{{comments_count}} Comments</p>
+        {{else}}
+        <p>No Comments Yet</p>
+        {{/if}}
+        <footer><a href="{{url}}">created {{created_at}}</a></footer>
+      </article>
+      {{/each}}
+    </script>
   </body>
 </html>
